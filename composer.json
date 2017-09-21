@@ -55,7 +55,7 @@
         }
     },
     "provide": {
-        "rwoverdijk/assetmanager" : "2.0.0"
+        "rwoverdijk/assetmanager" : "*"
     },
     "autoload-dev": {
         "psr-4": {
