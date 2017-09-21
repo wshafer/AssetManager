@@ -1,6 +1,6 @@
 {
-    "name": "rwoverdijk/assetmanager",
-    "description": "An assetmanager module for Zend Framework 3.",
+    "name": "wshafer/assetmanager",
+    "description": "An assetmanager module for Zend Framework.",
     "license": "BSD-2-Clause",
     "type": "library",
     "keywords": [
@@ -9,7 +9,7 @@
         "zf3",
         "zend framework"
     ],
-    "homepage": "https://github.com/RWOverdijk/AssetManager",
+    "homepage": "https://github.com/wshafer/AssetManager/wiki",
     "authors": [
         {
             "name": "Wesley Overdijk",
@@ -20,18 +20,17 @@
             "name": "Marco Pivetta",
             "email": "ocramius@gmail.com",
             "homepage": "http://ocramius.github.com/"
-        }
-    ],
-    "repositories": [
+        },
         {
-            "type": "vcs",
-            "url": "git@github.com:wshafer/assetmanager-core.git"
+            "name": "Westin Shafer",
+            "email": "shafer_w2002@yahoo.com",
+            "homepage": "https://github.com/wshafer"
         }
     ],
     "require": {
         "php": "^5.6 || ^7.0",
         "zendframework/zend-modulemanager": "^2.8.0",
-        "rwoverdijk/assetmanager-core": "dev-master",
+        "wshafer/assetmanager-core": "^1.0.0",
         "zendframework/zend-psr7bridge": "^0.2.2",
         "zendframework/zend-mvc": "^3.1.0",
         "zendframework/zend-component-installer": "^1.0 || ^0.7.0"
@@ -54,6 +53,9 @@
         "zf": {
             "module": "AssetManager"
         }
+    },
+    "provide": {
+        "rwoverdijk/assetmanager" : "2.0.0"
     },
     "autoload-dev": {
         "psr-4": {
