@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/gh/wshafer/AssetManager/branch/master/graph/badge.svg)](https://codecov.io/gh/wshafer/AssetManager)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wshafer/AssetManager/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/wshafer/AssetManager/?branch=master)
 [![Build Status](https://travis-ci.org/wshafer/AssetManager.svg?branch=master)](https://travis-ci.org/wshafer/AssetManager)
 

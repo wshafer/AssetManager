@@ -9,7 +9,6 @@ use AssetManager\View\Helper\Asset;
 use Interop\Container\ContainerInterface;
 use Zend\Cache\Storage\Adapter\AbstractAdapter as AbstractCacheAdapter;
 
-
 class AssetViewHelperFactory
 {
     /**
