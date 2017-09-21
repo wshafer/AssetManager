@@ -1,3 +1,6 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wshafer/AssetManager/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/wshafer/AssetManager/?branch=master)
+[![Build Status](https://travis-ci.org/wshafer/AssetManager.svg?branch=master)](https://travis-ci.org/wshafer/AssetManager)
+
 # AssetManager For Zend Framework
 Fork of the original [ZF2 Assetmanager](https://github.com/RWOverdijk/AssetManager) 
 By [Wesley Overdijk](http://blog.spoonx.nl/) and [Marco Pivetta](http://ocramius.github.com/)

@@ -1,35 +1,25 @@
 language: php
 
-dist: trusty
-
 php:
-  - 5.5
   - 5.6
-  - hhvm
+  - 7.0
+  - 7.1
 
-matrix:
-  exclude:
-    - php: 5.5
-  include:
-    - php: 5.5
-      env: dependencies=lowest
-    - php: 5.6
-      env: dependencies=lowest
-    - php: hhvm
-      env: dependencies=lowest
-    - php: 5.6
-      env: dependencies=highest
-    - php: 7
-      env: dependencies=highest
-    - php: hhvm
-      env: dependencies=highest
+cache:
+  directories:
+    - $HOME/.composer/cache
 
 before_script:
   - composer self-update
-  - if [ -z "$dependencies" ]; then composer install --prefer-dist -n; fi;
-  - if [ "$dependencies" = "lowest" ]; then composer update --prefer-dist --prefer-lowest -n; fi;
-  - if [ "$dependencies" = "highest" ]; then composer require zendframework/zend-mvc-console:^1.1 --prefer-dist -n; fi;
+  - composer install --prefer-dist -n
 
 script:
-  - ./vendor/bin/phpunit
-  - ./vendor/bin/phpcs --standard=PSR2 ./src ./tests/AssetManagerTest
+  - ./vendor/bin/phpunit tests/ --coverage-clover clover.xml
+  - ./vendor/bin/phpcs --extensions=php --standard=PSR2 --ignore=*/_files/* src/ tests/
+#  - ./vendor/bin/phpmd ./src text ./phpmd.xml --suffixes php
+
+after_success:
+  - travis_retry php vendor/bin/coveralls -v -x clover.xml
+  - bash <(curl -s https://codecov.io/bash)
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover clover.xml
