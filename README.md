@@ -1,4 +1,4 @@
-# AssetManager
+# AssetManager For Zend Framework
 Fork of the original [ZF2 Assetmanager](https://github.com/RWOverdijk/AssetManager) 
 By [Wesley Overdijk](http://blog.spoonx.nl/) and [Marco Pivetta](http://ocramius.github.com/)
 
