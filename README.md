@@ -1,8 +1,6 @@
-# AssetManager
+# AssetManager For Zend Framework
+Fork of the original [ZF2 Assetmanager](https://github.com/RWOverdijk/AssetManager) 
 By [Wesley Overdijk](http://blog.spoonx.nl/) and [Marco Pivetta](http://ocramius.github.com/)
-
-[![Build Status](https://secure.travis-ci.org/RWOverdijk/AssetManager.png?branch=master)](http://travis-ci.org/RWOverdijk/AssetManager)
-[![Latest Stable Version](https://poser.pugx.org/RWOverdijk/AssetManager/v/stable.png)](https://packagist.org/packages/RWOverdijk/AssetManager)
 
 ## Introduction
 This module is intended for usage with a default directory structure of a
@@ -17,13 +15,13 @@ In a nutshell, this module allows you to package assets with your module working
  1.  Require assetmanager:
 
 ```sh
-./composer.phar require rwoverdijk/assetmanager
+./composer.phar require wshafer/assetmanager
 #when asked for a version, type "1.*".
 ```
 
 ## Usage
 
-Take a look at the **[wiki](https://github.com/RWOverdijk/AssetManager/wiki)** for a quick start and more information.
+Take a look at the **[wiki](https://github.com/wshafer/assetmanager-core/wiki)** for a quick start and more information.
 A lot, if not all of the topics, have been covered in-dept there.
 
 **Sample module config:**
@@ -73,12 +71,6 @@ return array(
 
 ## Questions / support
 If you're having trouble with the asset manager there are a couple of resources that might be of help.
-* Join us on gitter [![Gitter chat](https://badges.gitter.im/SpoonX/Dev.png)](https://gitter.im/SpoonX/Dev)
-* The [FAQ wiki page](https://github.com/RWOverdijk/AssetManager/wiki/FAQ), where you'll perhaps find your answer.
-* [RWOverdijk at irc.freenode.net #zftalk.dev or #spoonx](http://webchat.freenode.net/?channels=zftalk.dev%2Czftalk%2Cspoonx&uio=MTE9MTAz8d)
-* [Issue tracker](https://github.com/RWOverdijk/AssetManager/issues). (Please try to not submit unrelated issues).
+* The [FAQ wiki page](https://github.com/wshafer/assetmanager-core/wiki/FAQ), where you'll perhaps find your answer.
+* [Issue tracker](https://github.com/wshafer/assetmanager-core/issues). (Please try to not submit unrelated issues).
 
-## Todo
-The task list has been slimmed down a lot lately. However, there are still a couple of things that should be done.
-
- * Renewing the cache
