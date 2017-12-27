@@ -19,7 +19,7 @@ In a nutshell, this module allows you to package assets with your module working
  1.  Require assetmanager:
 
 ```sh
-./composer.phar require wshafer/assetmanager:2.0.0-beta
+./composer.phar require wshafer/assetmanager:2.0.0-beta2
 ```
 
 ## Usage
